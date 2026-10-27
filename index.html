@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <p class="eyebrow">MY PRODUCTIVITY SPACE</p>
+      <h1>My To-Do List <span>✦</span></h1>
+      <p class="subtitle">Small steps every day make a big difference.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What do you need to do?"
+        maxlength="200"
+        autocomplete="off"
+        aria-label="New task"
+        required
+      >
+      <button type="submit" class="add-btn">+ Add Task</button>
+    </form>
+
+    <section class="task-section">
+      <div class="list-heading">
+        <h2>Your Tasks</h2>
+        <span id="task-count">0 tasks left</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+
+      <ul id="task-list"></ul>
+
+      <p id="empty-message" class="empty-message">
+        ✨ No tasks yet. Add your first task above!
+      </p>
+    </section>
+
+    <footer>
+      <span>Made with focus & care</span>
+      <span>✦ Stay productive</span>
+    </footer>
+  </main>
+</body>
+</html>
